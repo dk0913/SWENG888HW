@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- creates a vertical linear layout for our UI elements -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- creates 100dp of space between top of screen and firstNameEditText -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <!-- creates an EditText on UI for the user to enter their first name -->
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BBDEFB"
+        android:hint="@string/enter_first_name_here"
+        android:textColor="@color/purple_700"
+        android:textColorHint="#673AB7"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <!-- creates 100dp of space between firstNameEditText and lastNameEditText-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <!-- creates an EditText on UI for the user to enter their last name -->
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BBDEFB"
+        android:hint="@string/last_Name_String"
+        android:textColor="#673AB7"
+        android:textColorHint="#673AB7"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameEditText" />
+
+    <!-- creates 100dp of space between lastNameEditText and editTextDOB-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <!-- creates an EditText on UI for the user to enter their date of birth (DOB) -->
+    <EditText
+        android:id="@+id/editTextDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="#BBDEFB"
+        android:ems="10"
+        android:hint="@string/enter_date_or_birth_yyyy_mm_dd"
+        android:inputType="date"
+        android:textColor="@color/purple_700"
+        android:textColorHint="#673AB7"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameEditText" />
+
+    <!-- creates 45dp of space between editTextDOB and button-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <!-- creates a button on UI for the user to click to trigger age calculation -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="@string/button_Text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>

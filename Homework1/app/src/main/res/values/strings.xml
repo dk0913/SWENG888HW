@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Age Calculator</string>
+    <string name="last_Name_String">Enter last name here...
+
+    </string>
+    <string name="button_Text">Calculate Age</string>
+    <string name="date_Text">Enter date of birth:
+
+    </string>
+    <string name="title_Text">AGE CALCULATOR</string>
+    <string name="enter_first_name_here">Enter first name here...
+
+    </string>
+    <string name="enter_date_or_birth_yyyy_mm_dd">Enter Date of Birth (YYYY-MM-DD)
+
+    </string>
+</resources>
